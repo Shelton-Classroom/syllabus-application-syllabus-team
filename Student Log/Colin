@@ -1,1 +1,12 @@
+Progress:
+Started Creating the ERD for the program.
+So far I have five entities with primary keys: Institution, Instructors, Administrators, Classes, and Sections.
+Each Entity has a couple properties that I think will make the automation process relatively easy.
 
+Issues:
+Everytime I compare the mock data to my ERD I see spots I need to modify or add to.
+Waiting to meet with Stacy to compare notes for the final ERD. 
+Also I haven't heard from Deo at all, and he hasn't joined our slack.
+
+Goals: Finish the ERD.
+Populate the server with mock data.
