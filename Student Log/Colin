@@ -1,3 +1,16 @@
+1/31/2021
+Progress:
+Discussed requirements for the ERD with Stacy. 
+Met with Bob and Stacy, and discussed Bob's syllabus engine, which also uses a database.
+
+Issues:
+I need to meet with Amanda to see how she wants the project to function. 
+What sort of inputs the Teachers or Administrators need to access, change, keep up to date.
+
+Goals: 
+Finish the ERD update SQLDBM to build the tables on the SQL Server, and build the edmx file.
+
+1/24/2021
 Progress:
 Started Creating the ERD for the program.
 Changed Entity table names to singular to match Database coding standards.
@@ -9,5 +22,6 @@ Issues:
 Everytime I compare the mock data to my ERD I see spots I need to modify or add to.
 Also I haven't heard from Deo at all, and he hasn't joined our slack.
 
-Goals: Finish the ERD.
+Goals:
+Finish the ERD.
 Populate the server with mock data.
