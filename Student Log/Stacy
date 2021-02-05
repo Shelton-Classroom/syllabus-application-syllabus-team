@@ -1,6 +1,7 @@
 2/4
   Progress: 
   Talked with Colin, ERD was finalized
+  spent about an hour researching how to do a login
   Created an Employee Model and Controller 
   Made two methods (that don't do anything yet) so that we can begin our login code
   
