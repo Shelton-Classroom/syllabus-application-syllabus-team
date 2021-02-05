@@ -1,3 +1,15 @@
+2/4
+  Progress: 
+  Talked with Colin, ERD was finalized
+  Created an Employee Model and Controller 
+  Made two methods (that don't do anything yet) so that we can begin our login code
+  
+  Issues:
+  username and passwords are not uploaded onto the server
+  
+  Goals:
+  Ask the team about the usernames and passwords
+
 2/3
   Progress:
     met with team and professors to get a better idea of where we're at and where we're going
