@@ -1,1 +1,51 @@
+2/3
+  Progress:
+    met with team and professors to get a better idea of where we're at and where we're going
+    created a blank MVC app and loaded it to GitHub so Colin and I can begin our code 
+    
+  Issues:
+    the ERD looks nothing like how we left it, I'm confused by this, waiting for a response from Colin to see why
+  
+  Goals:
+    Start working on some login code and scaffolding
 
+1/28
+  Progress:
+    Tooled around with SQLDBM and created a very basic ERD for the team to work on together
+    Met with Colin Tuesday afternoon to discuss the ERD on SQLDBM
+  
+  Issues:
+    still have not heard from Deo
+    Haven't created the .edxm file, but will have it done once the ERD is finalized
+  
+  Goals:
+    Meet with Bob tonight to further discuss the ERD and get tips for fine tuning it
+    Finalize the ERD
+
+1/25
+  Progress:
+    Met with team and Bob to discuss last weeks progress
+    Did not complete/finalize ERD, but made progress, needs to be on a different software
+  
+  Issues:
+    ERD is designed on the wrong software
+    Bob says our ERD is too simple, need to make it more detailed.
+  
+  Goals:
+    Learn SQLDBM and move our ERD over there
+    Create .edxm file
+    meet with Colin today just to regroup
+
+1/23
+Progress:
+  Met with team, discussed our plan and am feeling better about our direction
+  Am navigating GitHut a little easier now
+  Started an ERD based off database provided by Micro team
+  
+Issues:
+  Need to determine variable types
+  where is Deo?
+  
+Goals:
+  complete/finalize ERD with Colin
+  
