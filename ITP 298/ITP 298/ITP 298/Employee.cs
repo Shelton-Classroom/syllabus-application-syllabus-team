@@ -27,7 +27,7 @@ namespace ITP_298
         public string Email { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public int EmployeeStatusId { get; set; }
+        public EmployeeStatus EmployeeStatusId { get; set; }
         public Nullable<int> PhoneNum { get; set; }
         public Nullable<System.DateTime> OfficeHours { get; set; }
     

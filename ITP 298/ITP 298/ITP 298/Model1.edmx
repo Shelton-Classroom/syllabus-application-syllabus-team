@@ -133,7 +133,7 @@
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="EmployeeStatusId" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeStatusId" Type="Model.EmployeeStatus" Nullable="false" />
           <Property Name="PhoneNum" Type="Int32" />
           <Property Name="OfficeHours" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Courses" Relationship="Self.FK_196" FromRole="Employee" ToRole="Course" />
@@ -216,6 +216,10 @@
             <End Role="Policy" EntitySet="Policies" />
           </AssociationSet>
         </EntityContainer>
+        <EnumType Name="EmployeeStatus">
+          <Member Name="Administrator" Value="1" />
+          <Member Name="Insrtuctor" Value="2" />
+        </EnumType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
