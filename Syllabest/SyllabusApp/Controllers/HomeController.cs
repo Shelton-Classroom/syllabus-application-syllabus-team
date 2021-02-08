@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ITP_298;
 
 namespace SyllabusApp.Controllers
 {
@@ -15,7 +16,7 @@ namespace SyllabusApp.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "SyllaBest - A syllabus generating application.";
 
             return View();
         }
