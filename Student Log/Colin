@@ -1,3 +1,28 @@
+2/7/2021
+Progress:
+Added a .gitignore file and no longer have merge conflicts.
+
+Issues:
+Need to meet with Amanda and Bob to talk about how to handle the login portion of the project.
+
+Goals:
+Populate tables with data from Patrick and Jeff.
+
+
+
+2/6/2021
+Progress:
+Put tables in the SQL Server. 
+Imported the EDMX into Visual Studio.
+Made a table value Enumerated.
+
+Issues:
+I currently am having a merge conflict with github so I cannot pull the project.
+
+Goals:
+Install a .gitignore and see if that fixes the conflict.
+Populate the tables on the server, at least enough for testing now.
+
 1/31/2021
 Progress:
 Discussed requirements for the ERD with Stacy. 
