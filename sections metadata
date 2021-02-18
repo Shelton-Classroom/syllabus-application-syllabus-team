@@ -1,0 +1,27 @@
+public partial class Section
+
+    {
+        private sealed class SectionMetadata
+        {
+            [Display(Name = "Mode")]
+            public string Mode { get; set; }
+
+            [Display(Name = "Room")]
+            public int Room { get; set; }
+
+            [Display(Name = "Time" )]
+            public DateTime Time { get; set; }
+
+            [Display(Name = "StartDate")]
+            public DateTime StartDate { get; set; }
+
+            [Display(Name = "EndDate")]
+            public DateTime EndDate { get; set; }
+
+            [Display(Name = "CourseId")]
+            public int CourseId { get; set; }
+
+           
+
+        }
+    }
