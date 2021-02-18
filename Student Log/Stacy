@@ -1,3 +1,10 @@
+2/8-2/14
+  Progress: Created an MVC app that has a login and registration
+    added metadata to Employee
+    did more research
+  Issues: still need to figure out how to connect it to the database, but at least the registration and the login work for now.
+  Goals: finish the login connection and ask Colin what he wants me to do next
+
 2/5
   Progress: Added code to the Employee Controller that connects our database to the login command, added notes as it progresses in hopes of explaining what it does
   Goal: tallk to the Sarah and Lamon in webdesign for the layout of the login so that I can test it to see if it works

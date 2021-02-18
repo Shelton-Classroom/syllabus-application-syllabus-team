@@ -14,14 +14,25 @@ namespace ITP_298
     
     public partial class Section
     {
-        public int SectionID { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Section()
+        {
+            this.Policies = new HashSet<Policy>();
+        }
+    
         public string Mode { get; set; }
         public string Room { get; set; }
         public System.DateTime Time { get; set; }
         public System.DateTime StartDate { get; set; }
         public System.DateTime EndDate { get; set; }
-        public int CourseID { get; set; }
+        public int CourseId { get; set; }
+        public int SectionId { get; set; }
+        public Nullable<int> EmployeeId { get; set; }
+        public string Title { get; set; }
     
         public virtual Course Course { get; set; }
+        public virtual Employee Employee { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Policy> Policies { get; set; }
     }
 }

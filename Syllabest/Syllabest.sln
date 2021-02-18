@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyllabusApp", "SyllabusApp\SyllabusApp.csproj", "{7A1ADA7C-CD4F-448E-AB3D-07CBFB55CD60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITP 298", "..\ITP 298\ITP 298\ITP 298\ITP 298.csproj", "{50252C8F-924E-4E4A-8ACE-7DCA90CB3E70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITP298", "..\ITP 298\ITP 298\ITP 298\ITP298.csproj", "{50252C8F-924E-4E4A-8ACE-7DCA90CB3E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{BB749662-3AE7-4F9F-A431-D1F2B60AC059}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{50252C8F-924E-4E4A-8ACE-7DCA90CB3E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50252C8F-924E-4E4A-8ACE-7DCA90CB3E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50252C8F-924E-4E4A-8ACE-7DCA90CB3E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB749662-3AE7-4F9F-A431-D1F2B60AC059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB749662-3AE7-4F9F-A431-D1F2B60AC059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB749662-3AE7-4F9F-A431-D1F2B60AC059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB749662-3AE7-4F9F-A431-D1F2B60AC059}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,8 +17,10 @@ namespace ITP_298
         public int PolicyId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public int EmployeeId { get; set; }
+        public int SectionId { get; set; }
+        public int GroupId { get; set; }
     
-        public virtual Employee Employee { get; set; }
+        public virtual Group Group { get; set; }
+        public virtual Section Section { get; set; }
     }
 }
