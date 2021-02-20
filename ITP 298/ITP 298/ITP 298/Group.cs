@@ -12,15 +12,18 @@ namespace ITP_298
     using System;
     using System.Collections.Generic;
     
-    public partial class Policy
+    public partial class Group
     {
-        public int PolicyId { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public int SectionId { get; set; }
-        public int GroupId { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Group()
+        {
+            this.Policies = new HashSet<Policy>();
+        }
     
-        public virtual Group Group { get; set; }
-        public virtual Section Section { get; set; }
+        public int GroupId { get; set; }
+        public string Name { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Policy> Policies { get; set; }
     }
 }

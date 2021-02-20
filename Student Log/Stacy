@@ -1,3 +1,18 @@
+2/16 & 2/17
+Progress: met with Bob and Colin for 45 minutes to discuss the ERD
+  met with Kirk from another team for 20 minutes to get gudance on the login
+  spent an hour connecting our database to the login code and adusting some things
+  
+Goals: try to meet with Kirk and Colin at the same time
+
+
+2/8-2/14
+  Progress: Created an MVC app that has a login and registration
+    added metadata to Employee
+    did more research
+  Issues: still need to figure out how to connect it to the database, but at least the registration and the login work for now.
+  Goals: finish the login connection and ask Colin what he wants me to do next
+
 2/5
   Progress: Added code to the Employee Controller that connects our database to the login command, added notes as it progresses in hopes of explaining what it does
   Goal: tallk to the Sarah and Lamon in webdesign for the layout of the login so that I can test it to see if it works

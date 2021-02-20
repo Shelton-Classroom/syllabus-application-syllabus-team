@@ -1,0 +1,18 @@
+in syllabus.cs
+
+namespace (ModelName)
+{
+[MetadataType(typeof(SectionMetadata))]
+
+public partial class Section
+{
+
+private sealed class SectionMetadata
+{
+         [Display (anything you want to make changes to = "Section"]
+         public string (anything you want to make changes to) { get;  set;}
+         [Display(anything you want to make changes to = "what you want to change it to")]
+
+}
+}
+}         
