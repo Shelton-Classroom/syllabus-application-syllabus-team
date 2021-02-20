@@ -26,6 +26,7 @@ namespace ITP_298
         public string Prerequisite { get; set; }
         public string DepartmentCode { get; set; }
         public int EmployeeId { get; set; }
+        public string Title { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Section> Sections { get; set; }
