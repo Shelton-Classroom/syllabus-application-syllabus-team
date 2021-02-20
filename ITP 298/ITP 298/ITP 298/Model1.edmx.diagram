@@ -7,7 +7,7 @@
       <Diagram DiagramId="57d832b87955453687ff2fba202119b7" Name="Diagram1">
         <EntityTypeShape EntityType="Model.Course" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Policy" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Policy" Width="1.5" PointX="7.625" PointY="2.125" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.Section" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
         <AssociationConnector Association="Model.FK_126" ManuallyRouted="false" />
         <AssociationConnector Association="Model.FK_196" ManuallyRouted="false" />
