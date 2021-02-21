@@ -34,3 +34,18 @@ Added a Log In button - I loke the way it looks but I dont like that it brings u
 I tinkered with it but the only way I could stop it from showing the menu it lost the format
 Added in testimonials and pricing.
 I did some research on adding in a download button for the PDF manual. I need to follow up with professor Shelton. She mentioned she had videos she coulld send me.
+
+
+2/21/21
+Met with Prof. Shelton on Wednesday to get the login information to upload the website to the school server. - Note when I deleted the old version and tried to upload the most
+most recent version, when I click the link provided it keeps taking me back to the old version...
+
+Tinkered with the Log In button. I attempted to keep the format with out the menu popping up when you click it. I was able to take the menu off and keep the same font style, 
+but it was above the menu button that made the height of the nav bar taller - I didnt like the way it looked. When I put in the code to get it on the same row the button was 
+still misplaced. I decided to go a simpler route and add it to the menu bar instead.
+
+Read over the information Prof. Shelton sent about the pop up. Due to me using a template it was diffcult for me to pick through all the code for the "fancy box" they used
+to make the intended changes. It was also difficult to add in a download button on the "fancy box".I did some reserach and went a slightly different route. 
+I created a separate html page for the User Guide and linked it to our home page. When you click the link it redirects you to a page where you can read over and/or download 
+the user guide. I am really happy with the way it looks and the download button is already working!! Only thing I would like to change is instead of it redirecting the page 
+I want to see if I can get it to create a separate tab.
