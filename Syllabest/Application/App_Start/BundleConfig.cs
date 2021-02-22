@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Configuration;
+using System.Web;
 using System.Web.Optimization;
 
 namespace Application
@@ -23,7 +24,7 @@ namespace Application
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      $"~/Content/{ConfigurationManager.AppSettings["Bootstrap"]}.css",
                       "~/Content/site.css"));
         }
     }

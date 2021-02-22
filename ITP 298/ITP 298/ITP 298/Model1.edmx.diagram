@@ -7,14 +7,14 @@
       <Diagram DiagramId="57d832b87955453687ff2fba202119b7" Name="Diagram1">
         <EntityTypeShape EntityType="Model.Course" Width="1.5" PointX="1" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="0.625" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Policy" Width="1.5" PointX="5.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Policy" Width="1.5" PointX="5.5" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.Section" Width="1.5" PointX="2.75" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="Model.FK_126" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="Model.AspNetRole" Width="1.5" PointX="5.75" PointY="7.5" />
-        <EntityTypeShape EntityType="Model.AspNetUserClaim" Width="1.5" PointX="10.25" PointY="8.625" />
-        <EntityTypeShape EntityType="Model.AspNetUserLogin" Width="1.5" PointX="10.25" PointY="6" />
-        <EntityTypeShape EntityType="Model.AspNetUser" Width="1.5" PointX="8" PointY="6.375" />
-        <EntityTypeShape EntityType="Model.Group" Width="1.5" PointX="7.75" PointY="0.875" />
+        <EntityTypeShape EntityType="Model.AspNetRole" Width="1.5" PointX="4.125" PointY="6.375" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaim" Width="1.5" PointX="9" PointY="7.125" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogin" Width="1.5" PointX="9.125" PointY="4.875" />
+        <EntityTypeShape EntityType="Model.AspNetUser" Width="1.5" PointX="6.625" PointY="4.875" />
+        <EntityTypeShape EntityType="Model.Group" Width="1.5" PointX="7.75" PointY="1.25" />
         <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
         <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
         <AssociationConnector Association="Model.FK_Section_Employee" />
