@@ -22,3 +22,17 @@ No issues so far.
 
 Goals
 To populate more tables from database. Going through general outlook for the project.
+
+
+02/21/21
+
+Progress
+I am working on Metadata for rest of the updated tables. There were few missing pieces on the previous code for Metadata Sectons, which I fixed.
+
+
+Issues
+Figuring out how do I put varchar 100s and others for Metadata.
+
+
+Goals
+Working with the team for next scaffolding and submenus.

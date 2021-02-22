@@ -1,3 +1,19 @@
+
+2/21/2021
+Progress:
+Met with Bob and Stacy and finalized our ERD aside from the login.
+Met with Stacy and got the final EDMX on both our machines with a functioning login.
+Picked a Bootswatch theme with Stacy.
+Made a template for each table for microapps to make new and organized data for remaining tables.
+
+Issues:
+Waiting on microapps to bring back data for tables.
+Waiting to hear back from Stacy about how to relate the login tables to the rest of the ERD.
+
+Goals:
+Populate the remaining tables with the data from microapps.
+Start making controllers and scaffolding.
+
 2/7/2021
 Progress:
 Added a .gitignore file and no longer have merge conflicts.
