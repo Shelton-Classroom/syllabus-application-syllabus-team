@@ -1,0 +1,344 @@
+--Colin Betancourt
+
+--One
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Web Page Design I',3,
+'Stresses a working knowledge of web site designs construction and management using HTML5 and Dreamweaver.
+Includes headings lists links images image maps tables forms and frames. Also includes templates Cascading Style Sheets (CSS)
+responsive web design and publishing to a web server.','ITE 115 or equivalent with emphasis on file and folder management.','ITD',110)
+
+
+--TWO
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Database Fundamentals',4,
+'Introduces the student to Relational Database and Relational Database theory. Includes planning defining and using a database;
+table design linking and normalization; and types of databases database description and definition. Additional topics cover the use of 
+Entity Relationship (ER) modeling in detail through many real-life examples and practical business problems and solutions. 
+After several iterations the ER model captures the data requirements and business rules and forms a sound basis for the initial design of a relational database.
+The introduction to SQL allows for the implementation of a database design using SQL.','ITE 115 or school approval.','ITD',130)
+
+
+--THREE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Database Fundamentals',4,
+'Introduces the student to Relational Database and Relational Database theory.
+Includes planning defining and using a database; table design linking and normalization;
+and types of databases database description and definition.
+Additional topics cover the use of Entity Relationship (ER) modeling in detail through many real-life examples and practical business problems and solutions.
+After several iterations the ER model captures the data requirements and business rules and forms a sound basis for the initial design of a relational database.
+The introduction to SQL allows for the implementation of a database design using SQL.','ITE 115 or school approval.','ITD',130)
+
+
+--FOUR
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Structured Query Language (T-SQL)',3,
+'Incorporates a working introduction to commands functions and operators used in SQL for extracting data from standard databases.
+Provides students with hands-on experience developing code functions triggers and stored procedures for Microsoft SQL Server.','ITD 130 or equivalent.','ITD',132)
+
+--FIVE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Web Page Design II',4,
+'Incorporates advanced techniques in web site planning design usability accessibility advanced site management and maintenance utilizing web editor software.',
+'ITD 110 or school approval.','ITD',210)
+
+--SIX
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Interactive Web Design',4,
+'Provides techniques in interactive web design concepts for cross-platform and low-bandwidth through fast and concise open source applications.
+Emphasizes the importance of usability accessibility optimization and performance. Understand and implement skills to design web sites for wireless devices.
+JQuery and jQuery Mobile are used to make websites interactive by reacting to visitor actions use animations and effects build drop-down navigation menus pop-ups
+and automate slideshows and more to improve the user interface.',
+'ITD 110 or equivalent.','ITD',212)
+
+--SEVEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Seminar and Project: Web Design Capstone',4,
+'Provides students with hands-on experience developing exemplary websites created with Dreamweaver
+using advanced behaviors and techniques such as Asynchronous JavaScript and database connectivity
+using the Php language JQuery responsive web design and additional components that students will select.',
+'ITD 210 and   ITD212 or permission from the instructor.','ITD',298)
+
+--EIGHT
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Introduction to Computer Applications and Concepts',3,
+'Covers computer concepts and internet skills and uses a software suite which includes
+word processing spreadsheet database and presentation software to demonstrate skills.
+Introduces information literacy knowledge and skills.',
+'keyboarding skills.','ITE',115)
+
+--NINE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Introduction to Internet Services',3,
+'Provides students with a working knowledge of Internet terminology and services
+including e-mail WWW browsing search engines ftp file compression and other services
+using a variety of software packages. Provides instruction for basic web page construction.',
+'Basic knowledge of computers and Windows.','ITE',130)
+
+--TEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Spreadsheet Software (Excel)',3,
+'Covers the use of spreadsheet software to create spreadsheets with formatted cells
+and cell ranges control pages multiple sheets charts and macros. Topics include type
+and edit text in a cell enter data on multiple worksheets work with formulas and functions
+create charts PivotTables and styles insert headers and footers and filter data. Covers MOS Excel objectives.',
+'ITE 115 or school approval.','ITE',140)
+
+--ELEVEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Desktop Database Software (Access)',3,
+'Incorporates instruction in planning defining and using a database; performing queries;
+producing reports; working with multiple files; and concepts of database programming.
+Course topics include database concepts principles of table design and table relationships
+entering data creating and using forms using data from different sources filtering creating mailing labels.
+This course covers MOS Access certification objectives.',
+'ITE 115 or school approval.','ITE',150)
+
+--TWELVE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Coordinated Internship in Information Technology Essentials',3,
+'Provides students supervised on-the-job training in Information Systems Technology.',
+'Permission of program head.','ITE',290)
+
+--THIRTEEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Seminar and Project: Computer Applications Capstone',4,
+'Provides students with hands-on experience using the current version of Microsoft Office
+in order to integrate the software applications to produce realistic business projects.',
+'ITE 140','ITE',298)
+
+--Fourteen
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Introduction to Network Concepts',3,
+'Provides instruction in networking media physical and logical topologies common networking standards and popular networking protocols.
+Emphasizes the TCP/IP protocol suite and related IP addressing schemes including CIDR. Includes selected topics in network implementation support and LAN/WAN connectivity.',
+'Co-requisite: ITE 221 or school approval.','ITN',101)
+
+--FIFTEEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Microcomputer Operating Systems',3,
+'Teaches use of operating system utilities and multiple-level directory
+structures creation of batch files and configuration of microcomputer environments.
+May include a study of graphical user interfaces.',
+'ITN 106','ITN',107)
+
+--SIXTEEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Personal Computer Hardware and Troubleshooting',3,
+'Includes specially designed instruction to give the student a basic knowledge of hardware and software configurations.
+Includes the installation of various peripheral devices as well as basic system hardware components.',
+'n/a','ITN',106)
+
+--SEVENTEEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Personal Computer Hardware and Troubleshooting',3,
+'Includes specially designed instruction to give the student a basic knowledge
+of hardware and software configurations. Includes the installation of various
+peripheral devices as well as basic system hardware components.',
+'n/a','ITN',106)
+
+--EIGHTEEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Administration of Network Resources',3,
+'Focuses on the management of local area network servers.
+Teaches proper structuring of security systems.
+Explains print queues disk management and other local area network (LAN) issues.
+Presents concerns and issues for the purchase and installation of hardware and software upgrades.
+Can be taught using any network operating system or a range of operating systems as a delivery tool.',
+' Co-requisite ITN 101.','ITN',200)
+
+--NINETEEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Virtual Infrastructure: Installation and Configuration',4,
+'Explores concepts and capabilities of virtual architecture with a focus
+on the installation configuration and management of a virtual infrastructure
+ESX Server and Virtual Center. Covers fundamentals of virtual network design
+and implementation fundamentals of storage area networks virtual switching virtual
+system management and engineering for high availability.',
+'ITN 171','ITN',254)
+
+--TWENTY
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Cloud Computing: Infrastructure and Services',3,
+'Focuses on cloud infrastructure deployment security models
+and the key considerations in migrating to cloud computing.
+Covers the technologies and processes required to build traditional virtualized
+and cloud data center environments including computation storage networking desktop
+and application virtualization business continuity security and management.',
+'ITN 101 or school approval.','ITN',257)
+
+--TWENTY-ONE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Network Security Basics',3,
+'Provides instruction in the basics of network security in depth.
+Includes security objectives security architecture security models
+and security layers; risk management network security policy and security training.
+Includes the five security keys confidentiality integrity availability accountability
+and auditability.',
+'n/a','ITN',260)
+
+--TWENTY-TWO
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Network Attacks/Computer Crime and Hacking',4,
+'Encompasses in-depth exploration of various methods for attacking and defending a network.
+Explores network security concepts from the viewpoint of hackers and their attack methodologies.
+Includes topics about hackers attacks Intrusion Detection Systems (IDS) malicious code computer crime and industrial espionage.',
+'n/a','ITN',261)
+
+--TWENTY-THREE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Network Communication/Security and Authentication',4,
+'Covers an in-depth exploration of various communication protocols
+with a concentration on TCP/IP. Explores communication protocols
+from the point of view of the hacker in order to highlight protocol weaknesses.
+Includes Internet architecture routing addressing topology fragmentation and protocol
+analysis and the use of various utilities to explore TCP/IP.',
+'n/a','ITN',262)
+
+--TWENTY-FOUR
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Internet/Intranet Firewalls and e-Commerce Security',4,
+'Gives an in-depth exploration of firewall Web security and e-commerce security.
+Explores firewall concepts types topology and the firewallaapos;s relationship
+to the TCP/IP protocol. Includes client/server architecture the Web server HTML
+and HTTP in relation to Web security and digital certification D.509 and public key
+infrastructure (PKI).',
+'ITN 260 or school approval.','ITN',263)
+
+--TWENTY-FIVE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Computer Forensics I',3,
+'Teaches computer forensic investigation techniques for collecting
+computer-related evidence at the physical layer from a variety of digital media
+(hard drives compact flash and PDAs) and performing analysis at the file system layer.',
+'ITE 221','ITN' ,276)
+
+--TWENTY-SIX
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Seminar and Project: Networking Capstone Course',4,
+'Covers the use of advanced concepts and utilities with current network operating systems.
+Includes administrator duties such as server organization permissions and rights and client
+side issues such as configuration troubleshooting and installation of applications.',
+'ITN 110 and ITN 111 or school approval.','ITN',298)
+
+--TWENTY-SEVEN
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Software Design',3,
+'Introduces principles and practices of software development.
+Includes instruction in critical thinking problem solving skills and essential programming
+logic in structured and object-oriented design using contemporary tools.',
+'n/a','ITP',100)
+
+--TWENTY-EIGHT
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Java Programming I',4,
+'Teaches the fundamentals of object-oriented programming using Java.
+Emphasizes program construction algorithm development coding debugging and
+documentation of console and graphical user interface applications.',
+'n/a','ITP',120)
+
+--TWENTY-NINE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('C# Programming I',4,
+'Teaches the fundamentals of object-oriented programming and design using C#.
+Emphasizes program construction algorithm development coding debugging and documentation
+of applications within the .NET framework.',
+'Prerequisite or Co-requisite: ITP 100.','ITP',136)
+
+--THIRTY
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('C# Programming II',4,
+'Focuses instruction in advanced object-oriented techniques using C# for application
+development. Emphasizes database connectivity and back-end development using the .NET Framework
+and database processing using LINQ and the Entity Framework.',
+'ITP 136 and ITP 130.','ITP',236)
+
+--THIRTY-ONE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Developing User Interfaces',4,
+'Provides instruction in the creation of computer application user
+interfaces that offer intuitive navigation and informative design for
+web mobile and desktop applications and other technologies.',
+'Prequisite or Co-requisite: ITP 236 or school approval.','ITP',245)
+
+--THIRTY-TWO
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Systems Analysis and Design',3,
+'Focuses on application of information technologies (IT) to system life cycle methodology
+consisting of the systems planning analysis design implementation and support/security phases.
+Covers methodologies related to identification of information requirements; feasibility in the
+areas of economic technical and social requirements and related issues. Software applications
+may be used to enhance student skills.',
+'ITE 115 or equivalent.','ITP',251)
+
+--THIRTY-THREE
+
+INSERT INTO dbo.Course(Title, Credit, Description, Prerequisite, 
+DepartmentCode, CourseNumber)
+VALUES ('Seminar and Project in Information Technology Programming: Programming Capstone',4,
+'Provides students with hands-on experience developing sophisticated web-based applications
+using ASP.NET and SQL Server including profiles personalization web parts themes multi-lingual
+and web services. Students will work in small teams to build a semester-long project.',
+'ITP 136','ITP',298)
