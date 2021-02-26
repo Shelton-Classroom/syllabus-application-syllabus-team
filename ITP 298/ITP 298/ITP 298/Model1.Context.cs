@@ -25,10 +25,7 @@ namespace ITP_298
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Course> Courses { get; set; }
-        public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Policy> Policies { get; set; }
-        public virtual DbSet<Section> Sections { get; set; }
         public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
@@ -36,5 +33,8 @@ namespace ITP_298
         public virtual DbSet<Group> Groups { get; set; }
         public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Section> Sections { get; set; }
+        public virtual DbSet<Course> Courses { get; set; }
     }
 }

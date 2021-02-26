@@ -21,12 +21,12 @@ namespace ITP_298
         }
     
         public int CourseId { get; set; }
+        public string Title { get; set; }
         public int Credit { get; set; }
         public string Description { get; set; }
         public string Prerequisite { get; set; }
         public string DepartmentCode { get; set; }
-        public string Title { get; set; }
-        public Nullable<int> SectionId { get; set; }
+        public Nullable<int> CourseNumber { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Section> Sections { get; set; }
