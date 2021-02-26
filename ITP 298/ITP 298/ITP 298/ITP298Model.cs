@@ -13,6 +13,7 @@ namespace ITP_298
     [MetadataType(typeof(CategoryMetadata))]
     public partial class Employee
     {
+        public string Name => $"{FirstName} {LastName}";
         private sealed class CategoryMetadata
         {
             [Display(Name = "Employee ID")]
@@ -24,7 +25,7 @@ namespace ITP_298
             [Display(Name = "Last Name")]
             public string LastName { get; set; }          
 
-            [Display(Name = "Employee Status Id")]
+            [Display(Name = "Employee Status")]
             public int EmployeeStatusId { get; set; }
 
             [Display(Name = "Phone Number")]
@@ -32,6 +33,9 @@ namespace ITP_298
 
             [Display(Name = "Office Hours")]
             public DateTime OfficeHours { get; set; }
+
+            [Display(Name = "Email")]
+            public string LoginUserId { get; set; }
 
 
         }

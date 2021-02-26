@@ -1,2 +1,22 @@
 ﻿
 2/25 - Added scaffolding
+
+
+
+Colin Betancourt 2/25/2021
+--Deleted Username and Password from Employee table
+because they were repeated groups from the AspNetUsers table
+
+--Added Course Number to the course table.
+
+--Changed the section Time column in the section table to a varchar(50),
+so that the days of the week the class meets may be included in the table.
+
+--Updated EDMX to Reflect changes.
+
+--Deleted the current courses in the table and replaced it with more organized
+  data from Patrick.
+
+  Colin Betancourt 2/26/2021
+--Added Partial Views to every table
+--Added Last day edited to the shared layout
