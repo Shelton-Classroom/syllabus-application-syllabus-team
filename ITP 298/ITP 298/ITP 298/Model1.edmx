@@ -491,7 +491,7 @@
           <Property Name="EmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="EmployeeStatusId" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeStatusId" Type="Model.StatusId" Nullable="false" />
           <Property Name="PhoneNum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="OfficeHours" Type="DateTime" Precision="3" />
           <Property Name="LoginUserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
@@ -576,6 +576,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EnumType Name="StatusId">
+          <Member Name="Administrator" Value="1" />
+          <Member Name="Instructor" Value="2" />
+        </EnumType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

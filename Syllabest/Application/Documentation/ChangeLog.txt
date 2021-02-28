@@ -20,3 +20,4 @@ so that the days of the week the class meets may be included in the table.
   Colin Betancourt 2/26/2021
 --Added Partial Views to every table
 --Added Last day edited to the shared layout
+--Got enumerated values to display properly (no longer shows a number)
