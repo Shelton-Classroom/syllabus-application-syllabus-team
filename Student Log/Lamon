@@ -75,3 +75,19 @@ Issues:
 -I test it out on the new document to put the body tag on the url
 -I browse the library folder and put the link to put the photo on the bullet points
 -The feather bullet image is there, but the bullets too big to resize them.
+
+PIG Report 4| On March 1, 2021
+
+Progress:
+-I open notepad ++ to make a css file
+-I can put feather bullets to make a css file on the syllabest css folder
+-I use the feather bullets from the website at compart.com/en/unicode
+
+Goal:
+My goal is to link the featherbullets to the html and change the checks to feathers
+
+Issues:
+-I delete the div tag and the bullet image is changed
+-The size still the same as the check bullets
+-After that, I save it, zipped the file, and upload to github
+
