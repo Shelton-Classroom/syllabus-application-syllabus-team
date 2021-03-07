@@ -63,3 +63,12 @@ Added in the link to Stacy's page so when you click the log in button it takes y
 The website is wrapping up nicely. Only want to make a couple adjustments but all of it is on my "dream" list. Everything is functioning.
 
 Dream List - adjust the format of the "about" section. I also would like to figure out how to avoid the page redirecting to the manual. I would prefer a separate tab to open.
+
+3/7/21
+I met with Stacy and Colin to get assistance with opening the code to their webpage in visual studios. We were successful. I was able to open the code in visual studios.
+
+I left visual studios up and running so I would not lose the code. I started editing the code to change the color but when I click the button to run the code it says that I need an updated system for it to run on the browser? 
+
+SUPER frustrating.... I will address this with Stacy and Colin tomorrow.
+
+I did research and found a mobile nav code to try and fix the menu from collapsing when the browser is minimized.
