@@ -36,6 +36,20 @@ namespace Application.Controllers
             return View(section);
         }
 
+        //public ActionResult Sections(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    Section section = db.Sections.Include(s=>s.EmployeeId).Where(s=>s.EmployeeId.Equals(id));
+        //    if (section == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    return View(section);
+        //}
+
         // GET: Sections/Create
         public ActionResult Create()
         {

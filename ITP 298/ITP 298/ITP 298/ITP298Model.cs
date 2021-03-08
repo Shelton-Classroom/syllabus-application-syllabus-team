@@ -16,6 +16,9 @@ namespace ITP_298
         public string Name => $"{FirstName} {LastName}";
         private sealed class EmployeeMetadata
         {
+            [Display(Name = "Employee Name")]
+            public string Name { get; set; }
+
             [Display(Name = "Employee ID")]
             public int EmployeeId { get; set; }
 
@@ -58,8 +61,8 @@ namespace ITP_298
 
         public sealed class CourseMetadata
         {
-            //[Display(Name = "Title")]
-            //public string Title { get; set; }
+            [Display(Name = "Course Name")]
+            public string Title { get; set; }
 
             //[Display(Name = "Credits")]
             //public int Credit { get; set; }
@@ -81,5 +84,32 @@ namespace ITP_298
 
 
         }
+    }
+
+    [MetadataType(typeof(SectionMetadata))]
+    public partial class Section
+    {
+        public string startDate => StartDate.ToString("MM/dd/yyyy");
+
+        public string endDate => EndDate.ToString("MM/dd/yyyy");
+        private sealed class SectionMetadata
+        {
+            [Display(Name = "Start Date")]
+            public string startDate => StartDate.ToString("MM/dd/yyyy");
+
+            [Display(Name = "End Date")]
+            public string endDate => EndDate.ToString("MM/dd/yyyy");
+
+            [Display(Name = "Section")]
+            public string Title { get; set; }
+
+            [Display(Name = "Start Date")]
+            public DateTime StartDate { get; set; }
+
+            [Display(Name = "End Date")]
+            public DateTime EndDate { get; set; }
+
+        }
+
     }
 }

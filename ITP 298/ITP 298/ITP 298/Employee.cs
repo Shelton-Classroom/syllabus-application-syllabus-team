@@ -23,7 +23,7 @@ namespace ITP_298
         public int EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public StatusId EmployeeStatusId { get; set; }
+        public EmployeeStatusEnum EmployeeStatusId { get; set; }
         public string PhoneNum { get; set; }
         public Nullable<System.DateTime> OfficeHours { get; set; }
         public string LoginUserId { get; set; }

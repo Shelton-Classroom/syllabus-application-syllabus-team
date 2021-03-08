@@ -16,11 +16,12 @@
     @Html.ActionLink("SyllaBest", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
    
   <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="nav navbar-nav navbar-left">
-            <li>@Html.ActionLink("Home", "Index", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-            <li>@Html.ActionLink("About", "About", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-            <li>@Html.ActionLink("Contact", "Contact", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-        </ul>
+      <ul class="nav navbar-nav navbar-left">
+          <li>@Html.ActionLink("Home", "Index", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li>@Html.ActionLink("Faculty", "Index", "Instructor")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li>@Html.ActionLink("About", "About", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li>@Html.ActionLink("Contact", "Contact", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      </ul>
         <ul class="nav navbar-nav navbar-right"> 
             <li> @Html.Partial("_LoginPartial")</li>
         </ul>
@@ -30,7 +31,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - SyllaBest 02/27/2021 </p>
+            <p>&copy; @DateTime.Now.Year - SyllaBest 03/4/2021 </p>
         </footer>
     </div>
 

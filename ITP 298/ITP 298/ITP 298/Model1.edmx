@@ -338,16 +338,7 @@
           </AssociationSet>
           <EntitySet Name="C__MigrationHistory" EntityType="Model.C__MigrationHistory" />
           <EntitySet Name="sysdiagrams" EntityType="Model.sysdiagram" />
-          <EntitySet Name="Employees" EntityType="Model.Employee" />
-          <AssociationSet Name="FK_Employee_AspNetUsers" Association="Model.FK_Employee_AspNetUsers">
-            <End Role="AspNetUser" EntitySet="AspNetUsers" />
-            <End Role="Employee" EntitySet="Employees" />
-          </AssociationSet>
           <EntitySet Name="Sections" EntityType="Model.Section" />
-          <AssociationSet Name="FK_Section_Employee" Association="Model.FK_Section_Employee">
-            <End Role="Employee" EntitySet="Employees" />
-            <End Role="Section" EntitySet="Sections" />
-          </AssociationSet>
           <AssociationSet Name="FK_Policy_Section" Association="Model.FK_Policy_Section">
             <End Role="Section" EntitySet="Sections" />
             <End Role="Policy" EntitySet="Policies" />
@@ -355,6 +346,15 @@
           <EntitySet Name="Courses" EntityType="Model.Course" />
           <AssociationSet Name="FK_Section_Course" Association="Model.FK_Section_Course">
             <End Role="Course" EntitySet="Courses" />
+            <End Role="Section" EntitySet="Sections" />
+          </AssociationSet>
+          <EntitySet Name="Employees" EntityType="Model.Employee" />
+          <AssociationSet Name="FK_Employee_AspNetUsers" Association="Model.FK_Employee_AspNetUsers">
+            <End Role="AspNetUser" EntitySet="AspNetUsers" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Section_Employee" Association="Model.FK_Section_Employee">
+            <End Role="Employee" EntitySet="Employees" />
             <End Role="Section" EntitySet="Sections" />
           </AssociationSet>
         </EntityContainer>
@@ -484,32 +484,6 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <EntityType Name="Employee">
-          <Key>
-            <PropertyRef Name="EmployeeId" />
-          </Key>
-          <Property Name="EmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="EmployeeStatusId" Type="Model.StatusId" Nullable="false" />
-          <Property Name="PhoneNum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="OfficeHours" Type="DateTime" Precision="3" />
-          <Property Name="LoginUserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="AspNetUser" Relationship="Model.FK_Employee_AspNetUsers" FromRole="Employee" ToRole="AspNetUser" />
-          <NavigationProperty Name="Sections" Relationship="Model.FK_Section_Employee" FromRole="Employee" ToRole="Section" />
-        </EntityType>
-        <Association Name="FK_Employee_AspNetUsers">
-          <End Type="Model.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
-          <End Type="Model.Employee" Role="Employee" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="AspNetUser">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Employee">
-              <PropertyRef Name="LoginUserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityType Name="Section">
           <Key>
             <PropertyRef Name="SectionId" />
@@ -523,22 +497,10 @@
           <Property Name="CourseId" Type="Int32" Nullable="false" />
           <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="EmployeeId" Type="Int32" />
-          <NavigationProperty Name="Employee" Relationship="Model.FK_Section_Employee" FromRole="Section" ToRole="Employee" />
           <NavigationProperty Name="Policies" Relationship="Model.FK_Policy_Section" FromRole="Section" ToRole="Policy" />
           <NavigationProperty Name="Course" Relationship="Model.FK_Section_Course" FromRole="Section" ToRole="Course" />
+          <NavigationProperty Name="Employee" Relationship="Model.FK_Section_Employee" FromRole="Section" ToRole="Employee" />
         </EntityType>
-        <Association Name="FK_Section_Employee">
-          <End Type="Model.Employee" Role="Employee" Multiplicity="0..1" />
-          <End Type="Model.Section" Role="Section" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Employee">
-              <PropertyRef Name="EmployeeId" />
-            </Principal>
-            <Dependent Role="Section">
-              <PropertyRef Name="EmployeeId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Policy_Section">
           <End Type="Model.Section" Role="Section" Multiplicity="1" />
           <End Type="Model.Policy" Role="Policy" Multiplicity="*" />
@@ -577,6 +539,52 @@
           </ReferentialConstraint>
         </Association>
         <EnumType Name="StatusId">
+          <Member Name="Administrator" Value="1" />
+          <Member Name="Instructor" Value="2" />
+        </EnumType>
+        <EnumType Name="EmployeeStatusId">
+          <Member Name="Administrator" Value="1" />
+          <Member Name="Instructor" Value="2" />
+        </EnumType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeId" />
+          </Key>
+          <Property Name="EmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmployeeStatusId" Type="Model.EmployeeStatusEnum" Nullable="false" />
+          <Property Name="PhoneNum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OfficeHours" Type="DateTime" Precision="3" />
+          <Property Name="LoginUserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUser" Relationship="Model.FK_Employee_AspNetUsers" FromRole="Employee" ToRole="AspNetUser" />
+          <NavigationProperty Name="Sections" Relationship="Model.FK_Section_Employee" FromRole="Employee" ToRole="Section" />
+        </EntityType>
+        <Association Name="FK_Employee_AspNetUsers">
+          <End Type="Model.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+          <End Type="Model.Employee" Role="Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUser">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="LoginUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Section_Employee">
+          <End Type="Model.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="Model.Section" Role="Section" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="Section">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EnumType Name="EmployeeStatusEnum">
           <Member Name="Administrator" Value="1" />
           <Member Name="Instructor" Value="2" />
         </EnumType>
@@ -679,19 +687,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Employees">
-            <EntityTypeMapping TypeName="Model.Employee">
-              <MappingFragment StoreEntitySet="Employee">
-                <ScalarProperty Name="LoginUserId" ColumnName="LoginUserId" />
-                <ScalarProperty Name="OfficeHours" ColumnName="OfficeHours" />
-                <ScalarProperty Name="PhoneNum" ColumnName="PhoneNum" />
-                <ScalarProperty Name="EmployeeStatusId" ColumnName="EmployeeStatusId" />
-                <ScalarProperty Name="LastName" ColumnName="LastName" />
-                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Sections">
             <EntityTypeMapping TypeName="Model.Section">
               <MappingFragment StoreEntitySet="Section">
@@ -717,6 +712,19 @@
                 <ScalarProperty Name="Credit" ColumnName="Credit" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="Model.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="LoginUserId" ColumnName="LoginUserId" />
+                <ScalarProperty Name="OfficeHours" ColumnName="OfficeHours" />
+                <ScalarProperty Name="PhoneNum" ColumnName="PhoneNum" />
+                <ScalarProperty Name="EmployeeStatusId" ColumnName="EmployeeStatusId" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
