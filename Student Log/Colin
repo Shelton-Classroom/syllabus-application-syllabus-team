@@ -1,3 +1,24 @@
+3/7/2021
+Progress:
+--Added link to the main page for the instructors.
+--Filtered the faculty page to the instructors only
+--Started work on a filter by name for the instructors page.
+--Removed scaffolding links on the instructor page to make it read only.
+--Changed metadata names on the Section page.
+--Filtered times out of course start and end dates.
+--Changed course title to say "Course Name" to avoid confusion on the section page.
+--Changed section title to say "Section" to avoid confusion with the course title.
+
+
+Issues:
+After commiting to github neither the app or the data projects work, they both say unloaded.
+For some reason the css on one of my pages is just not existant.
+I'm having trouble getting a filter I have to work.
+
+Goals:
+Meet with Amanda to fix the filter and css.
+Make it so when you click on an instructor it shows the sections they teach. 
+Eventually I want them to be clickable and they will bring up the syllabus for that section. 
 
 2/21/2021
 Progress:
