@@ -1,3 +1,24 @@
+3/8/21
+Progress
+-Created fake social medias (twitter, tumblr, facebook) to link the brochure and other components to
+-Generated user emails and passwords to create accounts for the database, then attached them to each employee
+-Typed up a document explaining how passwords and emails were generated
+-Created a video on how to download firefox, with sound
+-Filled out the "Whats New" section in the user manual
+
+Issues
+-Fake Facebook keeps being disabled
+-Never generated a fake Instagram which would be less likely to be disabled than Facebook
+-Twitter won't link from brochure, even though the account itself is fine and can be found
+
+Goals
+-Add Sections to our log in site
+-Re-do our how to download Chrome video because it doesn't have sound
+-Prepare "time spent" report for Sprint meeting
+-Edit price seciton of brochure
+
+
+
 2/22/21
 Progress
 -Researched information about databases and ERDS so that I could have a better understanding of how our project will come together.
