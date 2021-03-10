@@ -1,0 +1,33 @@
+﻿
+2/25 - Added scaffolding
+
+
+
+Colin Betancourt 2/25/2021
+--Deleted Username and Password from Employee table
+because they were repeated groups from the AspNetUsers table
+
+--Added Course Number to the course table.
+
+--Changed the section Time column in the section table to a varchar(50),
+so that the days of the week the class meets may be included in the table.
+
+--Updated EDMX to Reflect changes.
+
+--Deleted the current courses in the table and replaced it with more organized
+  data from Patrick.
+
+  Colin Betancourt 2/26/2021
+--Added Partial Views to every table
+--Added Last day edited to the shared layout
+--Got enumerated values to display properly (no longer shows a number)
+
+ Colin Betancourt 3/4/2021
+--Added link to the main page for the instructors.
+--Filtered the faculty page to the instructors only
+--Started work on a filter by name for the instructors page.
+--Removed scaffolding links on the instructor page to make it read only.
+--Changed metadata names on the Section page.
+--Filtered times out of course start and end dates.
+--Changed course title to say "Course Name" to avoid confusion on the section page.
+--Changed section title to say "Section" to avoid confusion with the course title.
