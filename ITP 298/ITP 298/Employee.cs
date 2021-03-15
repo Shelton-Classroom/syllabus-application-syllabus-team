@@ -24,12 +24,19 @@ namespace ITP_298
         public int EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+<<<<<<< Updated upstream:ITP 298/ITP 298/Employee.cs
         public string Email { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public int EmployeeStatusId { get; set; }
         public Nullable<int> PhoneNum { get; set; }
         public Nullable<System.DateTime> OfficeHours { get; set; }
+=======
+        public EmployeeStatusEnum EmployeeStatusId { get; set; }
+        public string PhoneNum { get; set; }
+        public string OfficeHours { get; set; }
+        public string LoginUserId { get; set; }
+>>>>>>> Stashed changes:ITP 298/ITP 298/ITP 298/Employee.cs
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Course> Courses { get; set; }
