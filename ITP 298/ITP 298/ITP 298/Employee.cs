@@ -12,23 +12,24 @@ namespace ITP_298
     using System;
     using System.Collections.Generic;
     
-    public partial class Course
+    public partial class Employee
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Course()
+        public Employee()
         {
             this.Sections = new HashSet<Section>();
         }
     
-        public int CourseID { get; set; }
-        public int Credit { get; set; }
-        public string Description { get; set; }
-        public string Prerequisite { get; set; }
-        public string DepartmentCode { get; set; }
         public int EmployeeId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public EmployeeStatusEnum EmployeeStatusId { get; set; }
+        public string PhoneNum { get; set; }
+        public Nullable<System.DateTime> OfficeHours { get; set; }
+        public string LoginUserId { get; set; }
     
+        public virtual AspNetUser AspNetUser { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Section> Sections { get; set; }
-        public virtual Employee Employee { get; set; }
     }
 }

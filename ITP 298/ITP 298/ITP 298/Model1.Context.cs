@@ -25,12 +25,6 @@ namespace ITP_298
             throw new UnintentionalCodeFirstException();
         }
     
-<<<<<<< Updated upstream:ITP 298/ITP 298/Model1.Context.cs
-        public virtual DbSet<Course> Courses { get; set; }
-        public virtual DbSet<Employee> Employees { get; set; }
-        public virtual DbSet<Policy> Policies { get; set; }
-        public virtual DbSet<Section> Sections { get; set; }
-=======
         public virtual DbSet<Policy> Policies { get; set; }
         public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
@@ -42,6 +36,5 @@ namespace ITP_298
         public virtual DbSet<Section> Sections { get; set; }
         public virtual DbSet<Course> Courses { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
->>>>>>> Stashed changes:ITP 298/ITP 298/ITP 298/Model1.Context.cs
     }
 }

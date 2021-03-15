@@ -410,7 +410,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ITP 298\ITP 298\ITP298.csproj">
+    <ProjectReference Include="..\..\ITP 298\ITP 298\ITP 298\ITP298.csproj">
       <Project>{9a21fee8-abd4-4a57-9894-420e64deec73}</Project>
       <Name>ITP298</Name>
     </ProjectReference>

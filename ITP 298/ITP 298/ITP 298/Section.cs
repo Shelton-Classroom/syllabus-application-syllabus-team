@@ -14,17 +14,6 @@ namespace ITP_298
     
     public partial class Section
     {
-<<<<<<< Updated upstream
-        public int SectionID { get; set; }
-        public string Mode { get; set; }
-        public string Room { get; set; }
-        public System.DateTime Time { get; set; }
-        public System.DateTime StartDate { get; set; }
-        public System.DateTime EndDate { get; set; }
-        public int CourseID { get; set; }
-    
-        public virtual Course Course { get; set; }
-=======
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Section()
         {
@@ -45,6 +34,5 @@ namespace ITP_298
         public virtual ICollection<Policy> Policies { get; set; }
         public virtual Course Course { get; set; }
         public virtual Employee Employee { get; set; }
->>>>>>> Stashed changes
     }
 }
