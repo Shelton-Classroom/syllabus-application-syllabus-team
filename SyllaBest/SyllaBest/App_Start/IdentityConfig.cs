@@ -1,17 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+<<<<<<< Updated upstream
 using System.Web;
 using Application.Models;
+=======
+>>>>>>> Stashed changes
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
+<<<<<<< Updated upstream
 using SyllaBest;
+=======
+using Application.Models;
+>>>>>>> Stashed changes
 
 namespace SyllaBest
 {

@@ -128,7 +128,10 @@ namespace Application.Controllers
             }
             base.Dispose(disposing);
         }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         public ActionResult Sections(int? id)
         {
             if (id == null)

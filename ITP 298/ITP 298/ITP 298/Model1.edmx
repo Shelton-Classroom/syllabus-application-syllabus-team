@@ -87,7 +87,7 @@
           <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="EmployeeStatusId" Type="int" Nullable="false" />
           <Property Name="PhoneNum" Type="varchar" MaxLength="50" />
-          <Property Name="OfficeHours" Type="datetime" />
+          <Property Name="OfficeHours" Type="varchar(max)" />
           <Property Name="LoginUserId" Type="nvarchar" MaxLength="128" />
         </EntityType>
         <EntityType Name="Group">
@@ -555,7 +555,11 @@
           <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="EmployeeStatusId" Type="Model.EmployeeStatusEnum" Nullable="false" />
           <Property Name="PhoneNum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+<<<<<<< Updated upstream
           <Property Name="OfficeHours" Type="DateTime" Precision="3" />
+=======
+          <Property Name="OfficeHours" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+>>>>>>> Stashed changes
           <Property Name="LoginUserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="AspNetUser" Relationship="Model.FK_Employee_AspNetUsers" FromRole="Employee" ToRole="AspNetUser" />
           <NavigationProperty Name="Sections" Relationship="Model.FK_Section_Employee" FromRole="Employee" ToRole="Section" />

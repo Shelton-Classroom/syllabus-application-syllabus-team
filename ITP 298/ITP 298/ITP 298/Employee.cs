@@ -25,7 +25,7 @@ namespace ITP_298
         public string LastName { get; set; }
         public EmployeeStatusEnum EmployeeStatusId { get; set; }
         public string PhoneNum { get; set; }
-        public Nullable<System.DateTime> OfficeHours { get; set; }
+        public string OfficeHours { get; set; }
         public string LoginUserId { get; set; }
     
         public virtual AspNetUser AspNetUser { get; set; }
