@@ -1,6 +1,7 @@
 
 3/22-3/28/21
 Progress:
+  Added employee credentials to login page for user testing
   Created a controller to select policies for a new syllabus
   Added a view that displays all of the Policies so that an employee can select the policies 
   they want to display on their new syllabus.  This is done using checkboxes.
