@@ -1,3 +1,33 @@
+3/27/2021
+Progress:
+  3/25/2021
+--Changed the display metadata for instructors to display as Instructor.
+--Added new display name in metadata for lists of employees that include Administrators and Instructors.
+--Added the department code to the sections page.
+--Created a class for the Syllabus and added the data from the entity framework.
+--Changed display name for employees in the index and sections cshtml.
+--Changed display name in the Instructor _Index partial view.
+--Changed display name in the sections Index page.
+--Updated the sections details page with metadata for startDate and endDate
+	and instructor name.
+--Updated Employee details page to use one name instead of first and last name separately
+
+  3/14/2021
+--Fixed Instructor CSS and search box.
+--Added ActionResult to the employees controller that returns sections tuaght by an instructor.
+--Added a View to employees folder that displays an instructors sections
+--Clicking the Instructor on the Faculty page now brings anyone visiting the site to a list of sections taught by the instructor.
+--Rearranged the order of the sections output to look better and make more sense.
+
+Issues: 
+  Was unable to get the links from the homepage to carry the employee Id to send them to pages made for the user.
+  I think this maybe because it is a partial page. 
+  Can't proceed with the creation of the syllabus itself, until the user can create and select policies specific to them.
+  
+ Goals:
+ Attempt to fix the user specific pages by using a normal view instead of the partial in a similar manner that I handled the Instructor page.
+ 
+
 3/7/2021
 Progress:
 --Added link to the main page for the instructors.
