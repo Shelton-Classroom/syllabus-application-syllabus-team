@@ -6,12 +6,13 @@ Progress:
   Added a view that displays all of the Policies so that an employee can select the policies 
   they want to display on their new syllabus.  This is done using checkboxes.
   Created a button to submit their selection to display it on another page (will eventually be the actual syllabus)
+  Added a course search
 
 Issues:
   After selcting the policies, it will only display the PolicyId.
   
 Goals: 
-  Make it display the Title and the Description
+  Make the checkbox selection display the Title and the Description
   Created a courses filter
 
 3/16-3/18/21
