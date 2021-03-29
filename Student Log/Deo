@@ -34,6 +34,8 @@ Issues
 Figuring out how do I put varchar 100s and others for Metadata.
 
 
+
+
 Goals
 Working with the team for next scaffolding and submenus.
 
@@ -50,3 +52,15 @@ So, that I have not been able to test my codes but I think it'd work because I h
 Goals
 To fix my Visual Studio with the help of professors tomorrow so I can test and finish up filter. Also, work filters on other tables as well.
 
+
+
+03/28/2021
+Progress
+Changed codes from Courses to Sections for filter.
+Added search for Courses in sections.
+
+Issues
+My visual studio, I am still having issues with Account.cs to work for my codes to push on server.
+
+Goals
+To work on sort in alphabetical order.
