@@ -1,0 +1,128 @@
+added to COURSE CONTROLLER - code for course search box
+
+        public ActionResult _IndexByCourse(string parm)
+        {
+            db.Configuration.ProxyCreationEnabled = false;
+            var courses = db.Courses
+                .Include(c => c.Sections) 
+                .Where(c => c.Title.Contains(parm)).ToArray();
+            return PartialView("_Index", courses);
+        }
+
+
+COURSE INDEX
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+</html>
+
+<p>
+    <label class="filter">Search by Course</label>
+    &nbsp;&nbsp;&nbsp;
+    @Html.TextArea("Search", null,
+    htmlAttributes: new { @class = "filter", @onclick = "FilterByCourse()", @rows = "1" })
+    <button onclick="FilterByCourse()">Search</button>
+</p>
+
+<div id="courseContainer">
+    @Html.Partial("_Index", Model)
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+            function FilterByCourse() {
+                var search = $('#Search').val();
+                var container = $('#courseContainer');
+                container.load('@Url.Action("_IndexByCourse")?parm=' + search);
+            }
+    </script>
+}
+
+
+
+
+CHECKED VIEW - the code for the policy checkboxes
+@model ITP_298.PolicyModel
+@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm())
+{
+    <fieldset class="form-group">
+        <legend>Select policies for your syllabus</legend>
+
+
+        @for (int i = 0; i < Model.Policies.Count; i++)
+        {
+            @*if (i % 7 == 0)
+            {@:<br />}*@
+                <div class="form-check">
+                    <label class="form-check-label">
+                        @*<input class="form-check-input" type="checkbox" value="" checked="">*@
+                        @Html.CheckBoxFor(model => model.Policies[i].IsChecked)
+                        <label>@Model.Policies[i].Title</label> |
+                        <label>@Model.Policies[i].Description</label>
+                        @Html.HiddenFor(model => model.Policies[i].PolicyId)
+                        @*@Html.HiddenFor(model => model.Policies[i].Group)
+                        @Html.HiddenFor(model => model.Policies[i].GroupId)
+                        @Html.HiddenFor(model => model.Policies[i].Section)
+                        @Html.HiddenFor(model => model.Policies[i].SectionId)*@
+                    </label>
+                </div>
+            }
+        </fieldset>
+
+        <input type="submit" value="Submit" />
+    }
+    
+    
+    CHECKED CONTROLLER
+    using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using ITP_298;
+
+namespace SyllaBest.Controllers
+{
+    public class CheckedController : Controller
+    {
+        // GET: Checked
+        public ActionResult Index()
+        {
+            PolicyModel policy = new PolicyModel();
+            using (Entities db = new Entities())
+            {
+                policy.Policies = db.Policies.ToList<Policy>();
+            }
+                return View(policy);
+        }
+
+        [HttpPost]
+        public ActionResult Index(PolicyModel model)
+        {
+            var selectedPolicies = model.Policies.Where(x => x.IsChecked == true).ToList<Policy>();
+            return Content(String.Join(",", selectedPolicies.Select(x => x.PolicyId)));
+        }
+        public ActionResult CourseIndex()
+        {
+            CourseModel course = new CourseModel();
+            using (Entities db = new Entities())
+            {
+                course.Courses = db.Courses.ToList<Course>();
+            }
+            return View(course);
+        }
+    }
+}
