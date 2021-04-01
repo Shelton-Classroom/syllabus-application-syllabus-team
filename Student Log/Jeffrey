@@ -1,1 +1,124 @@
+3/29/21
 
+Progress
+-Finished Chrome Video
+-Prepared and finished time spent
+-Edited Price Section of brochure
+-Wrote up biography for About Us Section
+-Added to Whats New Section on User Guide
+
+Issues
+-Couldnt add sections, website was giving an error, need to talk to programmers
+-Didn't find picture for About Us Section
+
+Goals
+-Need to write up agenda
+-Need to still add sections for classes
+-Need to meet with programmers to ask what data still needs to be added
+-Need to work on editing user manual
+
+
+
+
+3/8/21
+Progress
+-Created fake social medias (twitter, tumblr, facebook) to link the brochure and other components to
+-Generated user emails and passwords to create accounts for the database, then attached them to each employee
+-Typed up a document explaining how passwords and emails were generated
+-Created a video on how to download firefox, with sound
+-Filled out the "Whats New" section in the user manual
+
+Issues
+-Fake Facebook keeps being disabled
+-Never generated a fake Instagram which would be less likely to be disabled than Facebook
+-Twitter won't link from brochure, even though the account itself is fine and can be found
+
+Goals
+-Add Sections to our log in site
+-Re-do our how to download Chrome video because it doesn't have sound
+-Prepare "time spent" report for Sprint meeting
+-Edit price seciton of brochure
+
+
+
+2/22/21
+Progress
+-Researched information about databases and ERDS so that I could have a better understanding of how our project will come together.
+-Edited Brochure to a point I'm satisfied with for now.  I did this by changing fonts, adding colors, filling out sections and adding the map.
+-Recorded test video of downloading a web browser for technical manual
+-Met with Patrick to discuss plans going forward
+
+Issues
+-My knowledge of database and programming terminology could be stronger
+-Need to get more confident in recording videos for the manual
+-I have yet to try other ways of recording aside Zoom
+-I need to refresh my knowlegdge on using hyperlinks for the brochure and manual
+
+Goals
+-I need to create fake social media accounts and an email
+-I need to hyperlink the brochure to the dummy social medias and email
+-I need write up an agenda for the Sprint on 3/1/21 
+-I need to fill out the "Whats New" section on our manual
+-I need to record a video with sound to put on the technical manual as a proof of concept to see if we want to continue placing videos in the manual.
+
+
+
+
+
+
+2/7/21
+Progress
+-Edited brochure
+-Searched through fonts online for the brochure
+-Met with Patrick to discuss Technical Manual and Progress Report
+
+Issues
+-Need the same map from the webpage to put on the brochure
+-Having trouble adding the color yellow to the brochure to match the webpage
+
+Goals
+-Finish progress report for 2/15/21
+-Place map on brochure
+-Settle on a font that looks professional
+
+
+
+
+1/24/21
+Progress
+-This week I met with the whole team on Monday (1/18/21) to discuss what our plans were going forward.  
+-Met individually with Patrick (1/19/21) and discussed the plans for field/datas for the database
+-Patrick set up the fields for our initial database and then we split filling up the data over the week.
+-Talked about brochure and sprint meeting plans/agendas but need to follow up
+-Decided to split responsibility of keeping Monday meeting minutes between Patrick and myself. I will be keeping minutes for 1/25/21
+
+
+Issues
+-Must get clearer picture of brochure and sprint meeting agendas
+-Password and Username fields were mentioned during the week but I haven't added data for these this week as I'm waiting for Mondays meeting
+
+
+Goals
+-Add password and username data this week if that is we decide Monday
+-At meeting(1/25/21) talk about brochure and sprint meeting agenda and then atleast set up the sprint meeting agenda for 1/31
+-Talk about key fields and relationships during meeting with whole group and then help implement
+
+
+
+
+
+
+1/18/21
+Progress
+-Met with Team
+-Joined Slack
+-Learned Github
+
+Issues
+-Didn't add personal branch to Github
+-Need to know what information is needed for Database
+
+Goals
+-Meet with team and set up plan
+-Seek out what information/fields we want to add to database
+-See if team wants form generated in excel/access to allow information to be added

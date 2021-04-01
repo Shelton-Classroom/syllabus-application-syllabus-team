@@ -1,1 +1,138 @@
+3/22-3/28/21
+Progress:
+  Added employee credentials to login page for user testing
+  Created a controller to select policies for a new syllabus
+  Added a view that displays all of the Policies so that an employee can select the policies 
+  they want to display on their new syllabus.  This is done using checkboxes.
+  Created a button to submit their selection to display it on another page (will eventually be the actual syllabus)
+  Added a course search
 
+Issues:
+  After selcting the policies, it will only display the PolicyId.
+  
+Goals: 
+  Make the checkbox selection display the Title and the Description
+  
+
+3/16-3/18/21
+Progress:
+  Fixed the technical issues with the project on my machine and Colin's machine.
+  Added code provied by Sarah to fix the toggle menu and changed the font.
+  
+Issues: 
+  Was not able to do anything new
+
+Goals:
+  Create a page that allows teachers/admins to pick their policies
+
+3/1-3/7
+Progress:  Was able to get all the links for the menu onto one line
+  I also worked on directing a user to their appropriate menus based off their authentication
+  
+Issues: The user authentication isn't finished, it doesn't work yet.
+  Can't push my code to GitHub because the team is having issues with their's (I did commit it as a text file so you could look at it thought)
+
+Goals:
+  Finish the user authentication
+  Discuss with the team EXACTLY how we want the syllabus to be displayed
+  Fix issues with GitHub
+
+
+2/21 -2/27
+Progress: met with Colin for a minute
+  Created controllers and views 
+  Added a submenu that is only accessible once you login
+
+Issues: I do not like the look of the submenu, but it works for now.
+
+Goals: Fix the submenu.
+
+2/16 - 2/20
+Progress: met with Bob and Colin for 45 minutes to discuss the ERD
+  met with Kirk from another team for 20 minutes to get gudance on the login
+  spent an hour connecting our database to the login code and adusting some things - it works!
+  met with Colin and coded/worked with him for 1.5 hours via zoom on Saturday
+  spent 2.5 hours working on the look/bootstrap of our MVC, changing links to go to our other website, and uploading our MVC app to the server
+  spent 20 minutes meeting with Patrick as well
+  
+Issues: I'd like to meet with Sarah or Lamon so that I can get the "Register and Login" to appear on the right side of the nav bar
+  I spent a lot of time trying to figure it out, but I'm missing something - I think a fresh set of eyes will be fix it
+  
+Goals: Discuss with the team what exactly we want on our menu and submenus and where it should take us so that we can nail the the scaffolding down
+
+
+2/8-2/14
+  Progress: Created an MVC app that has a login and registration
+    added metadata to Employee
+    did more research
+  Issues: still need to figure out how to connect it to the database, but at least the registration and the login work for now.
+  Goals: finish the login connection and ask Colin what he wants me to do next
+
+2/5
+  Progress: Added code to the Employee Controller that connects our database to the login command, added notes as it progresses in hopes of explaining what it does
+  Goal: tallk to the Sarah and Lamon in webdesign for the layout of the login so that I can test it to see if it works
+
+2/4 
+  Progress: 
+  Talked with Colin, ERD was finalized
+  spent about an hour researching how to do a login
+  Created an Employee Model and Controller 
+  Made two methods (that don't do anything yet) so that we can begin our login code
+  
+  Issues:
+  username and passwords are not uploaded onto the server
+  
+  Goals:
+  Ask the team about the usernames and passwords
+
+2/3
+  Progress:
+    met with team and professors to get a better idea of where we're at and where we're going
+    created a blank MVC app and loaded it to GitHub so Colin and I can begin our code 
+    
+  Issues:
+    the ERD looks nothing like how we left it, I'm confused by this, waiting for a response from Colin to see why
+  
+  Goals:
+    Start working on some login code and scaffolding
+
+1/28
+  Progress:
+    Tooled around with SQLDBM and created a very basic ERD for the team to work on together
+    Met with Colin Tuesday afternoon to discuss the ERD on SQLDBM
+  
+  Issues:
+    still have not heard from Deo
+    Haven't created the .edxm file, but will have it done once the ERD is finalized
+  
+  Goals:
+    Meet with Bob tonight to further discuss the ERD and get tips for fine tuning it
+    Finalize the ERD
+
+1/25
+  Progress:
+    Met with team and Bob to discuss last weeks progress
+    Did not complete/finalize ERD, but made progress, needs to be on a different software
+  
+  Issues:
+    ERD is designed on the wrong software
+    Bob says our ERD is too simple, need to make it more detailed.
+  
+  Goals:
+    Learn SQLDBM and move our ERD over there
+    Create .edxm file
+    meet with Colin today just to regroup
+
+1/23
+Progress:
+  Met with team, discussed our plan and am feeling better about our direction
+  Am navigating GitHut a little easier now
+  Started an ERD based off database provided by Micro team
+  
+Issues:
+  Need to determine variable types
+  where is Deo?
+  
+Goals:
+  complete/finalize ERD with Colin
+  

@@ -1,1 +1,157 @@
+Patrick Hall 1-15-21
+
+Initial PIG
+
+I think the main goal I had for the first week was just to understand what We would be doing.  It may also be looking at the different syllabi to determine what my part may be in the project.  I think I can look up some web suggestions for syllabi as well.  I think part of what I am thinking about is how a database will be built and exactly who our target audience is.  Not only is it the individual teachers, it is also one whole school, or various different schools.  I also feel this software could be used by colleges, or high school settings.   What I have done so far is to think about what fields might be used to set up the program.  My goal is to be a lead for the database handling.
+I think the biggest problem is that we really don’t have a clear plan yet on how the software is supposed to work, but I am trying to think of the best way to get data from a school and import that data to our database
+
+I work on databases about student’s eye health at work around Virginia and one of the ways we find is easiest to input data is to get schools to send a CSV file template that we can import into access.  As applications people we could develop an import template that any school could use for upload information simply by copying data to a spreadsheet.  That way anyone can handle the information transfer.  Then with the data already in software, The user doesn’t have to start at square one.  The fields obviously will autofill in on our end design.
+
+I could also be used as a so called user “Alpha/Beta Tester”  to help trouble shoot issues and critique the look and ease of use of the software.  
+
+At this point, My progress is small but now that I am getting a clearer idea of where we are going I will very shortly be able to submit syllabi that are “suggested formats” to the group for possible acceptance. 
+
+Again, this is early thinking, but it is a thought.
+
+
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+
+1/24/21  PIG #1    
+Patrick Hall
+Progress
+-Met with Team
+-Had an individual meeting with Jeff, the other Micro guy.  We divided up creating some data to put into our database.  The idea being that it would give the programmers options and ideas.
+-We discussed a little about the brochure.  We are going to wait a bit to see how the basic web color scheme and make sure it looks the same.
+-We are going to make a minute of the Monday meetings so if anyone misses Mondays, they know what went on.  We will alternate these between Jeff and myself.
+
+-I’m getting used to slack.  
+-Learning to use Github to help my group know where the micro apps people are.
+
+-We are basically playing the Role of our school Admins. Generally Suppling data to the database.
+
+Issues
+-Didn't put my First PIG in the right place
+-I’m probably overdoing it with our database and know it will be cut back some areas and some I maybe adding to College Policies
+-Must get a sprint agenda setup for Jan 31, not sure what that entails
+
+
+Goals (Future)
+-Meet on Monday and nail down our Agenda 
+-Seek out what information/fields we want to add to database
+-Support programmers in deciding primary key fields, etc.…
+-Further update our database as needed.
+
+___________________________________________________________________________________________________________________________________________________________________________
+
+ PIG #2   Patrick Hall
+ 2/7/21
+	Progress:
+	-Research different user manual designs
+  -Design a framework for User’s Guide/Tech Manual
+	-Work on hyperlinks for chapters to give manual a easy to find feel.
+	-Met with Jeffery to discuss Technical Manual and Progress Report.
+	
+
+	Issues:
+	-In designing manual, need to decide on how to structure it
+	-Integrate and install font style “monoton” into my word document
+  -Planning for future presentation of micro apps group and progress report  
+	
+
+	Goals:
+	-Finish agenda for 2/15/21
+	-Try and get a really nice title page going for the User guide
+	-Research how to make a pdf version of manual that displays well on a web browser since the manual will be on the webpage.
+	
+	___________________________________________________________________________________________________________________________________________________________________
+	PIG #3   Patrick Hall
+	 2/21/21
+	Progress:
+		1. Still looking at features to use for our User Guide
+		2. Started to add hyperlinks to our webpage and google maps for User’s Guide/Tech Manual
+		3. Worked on a better look for the pricing section.
+		4. Met with Jeffery on Sunday to discuss multimedia and videos to add to the user’s guide.
+		5. Made a pdf version of our user manual.  It works well so far with hyperlinks and bookmarks I included
+		
+	
+
+	Issues:
+		1. When we looked at the videography, we are trying to get videos that look professional and are instructive.
+		2. Working on issues with understanding how the finished project will work.  Possibly helping with population of data as needed.  But need to understand structure of database better.
+	
+		
+	
+
+	Goals:
+		1. Make a very clear-cut view of how we are progressing for future sprint meeting
+		2. Work on integrating bells and whistles into our user guide to make it interactive.
+
+		3. Start to fill in the user guide as I am better able to see how the project works.
+		
+_________________________________________________________________________________________________________________________________________________________________
+
+PIG #4  Patrick Hall
+	
+	
+	
+	03/07/21
+		Progress:
+			1. Integrated Multimedia Videos into our User Guide
+			2. Added BookMarks to all of Table of Contents
+			3. Encapsulate pages into text bubbles.
+			4. Met with Jeffery on Sunday to discuss getting videos setup for chrome, and plan for video on login to the system.
+			5. Input more data into database for Colin.
+			
+		
+	
+
+		Issues:
+			1. This week there are a lot of smaller things we are looking at such as color schemes and just making everything flow properly.
+			2. Although I feel that I understand how the program will work better.  I am picking Stacy and Colins brains about how the software will work.
+              		3.  Noticed a couple glitches in code,  I need to tell Colin about when inputing data.
+		
+			
+		
+	
+
+		Goals:
+			1. Although I have put in enough data to “play” with the database.  I want to input more so you can see how cool this database can be.
+			2. Work on captions in word and research if that can carry over to a pdf.
+			3. Start to fill in the user guide more as far as how the log on works.
+			
+			
+			_________________________________________________________________________________________________________________________________________________
+			
+			PIG #5 Patrick Hall
+		        03/28/21
+			
+			
+			Progress:
+	                       1. Started to add a Bio Section to the User Guide.
+			       2. Make my own Bio.
+	           	       3. Encapsulated more sections into text bubbles.
+			       4. Met with Jeffery on Sunday online on slack to talk about project.
+			       5. Clean up User Guide as much as possible
+				
+			
+			
+			
+			Issues:
+			       1. Still have not gotten all the Bio’s and pictures yet.
+			       2. Lots of small details that need fixing in User guide that are hard to find like the point size of text boxes, and colors
+			       
+	
+	
+	
+	                Goals:
+				1. Finish Bio section, add more stuff to table of contents.
+				2. Start decoding how this project will work better with the programming team so we can begin adding directions for user.
+
+
+
+
+
+
 

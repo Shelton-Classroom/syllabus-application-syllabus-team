@@ -1,1 +1,109 @@
+Saved Templates to show the team.
+Started to think about Color Schemes.
+Wanted to contact the team as far as a company name so I can start to think about logos.
+Attended optional class so I could get in touch with my team and have them add me to the slack channel.
 
+1/19/21
+Met with Lamon for about 10 minutes. 
+I sent him some ideas that I had for the Logo.
+We agreed on a template. 
+I will work on adjusting the contents of the template to fit our needs.
+On Monday we will show the team the template and start to build a wire frame.
+
+1/24/21
+Stripped the template chosen for the website and added in sections specific to Syllabest.
+Will show the team tomorrow to get feedback on what needs to be adjusted/added etc.
+Received the logo from Lamon! Looks great - Need to figure out a way to make it bigger without it becoming blurry.
+
+1/30/21
+Met with Lamon, Patrick, and Jeff on 1/26/21
+Spoke about the layout and color scheme. We want to make sure everything flows and matches so Patrick and Jeff are making adjustments to the brochure.
+Talked about the sections we are going to incorporate within the website so it matches the brochure.
+Lamon and I spoke about adjustments to the website and logo
+I worked on adjustments to the website - Changed background color, changed sections, adding a map and address.
+
+2/7/21
+Worked on adding a map to the webpage.
+I wanted it to be the width of the web page but could not figure out how to stretch just the width.
+Also changed the font size so it's larger.
+Worked on the "About section" - I am not adding it in until approved by the team.
+
+2/14/21
+Changed the location of the map to the Parham Road Campus
+Added a Log In button - I loke the way it looks but I dont like that it brings up the toggle menu the same way the "Menu" button does.
+I tinkered with it but the only way I could stop it from showing the menu it lost the format
+Added in testimonials and pricing.
+I did some research on adding in a download button for the PDF manual. I need to follow up with professor Shelton. She mentioned she had videos she coulld send me.
+
+
+2/21/21
+Met with Prof. Shelton on Wednesday to get the login information to upload the website to the school server. - Note when I deleted the old version and tried to upload the most
+most recent version, when I click the link provided it keeps taking me back to the old version...
+
+Tinkered with the Log In button. I attempted to keep the format with out the menu popping up when you click it. I was able to take the menu off and keep the same font style, 
+but it was above the menu button that made the height of the nav bar taller - I didnt like the way it looked. When I put in the code to get it on the same row the button was 
+still misplaced. I decided to go a simpler route and add it to the menu bar instead.
+
+Read over the information Prof. Shelton sent about the pop up. Due to me using a template it was diffcult for me to pick through all the code for the "fancy box" they used
+to make the intended changes. It was also difficult to add in a download button on the "fancy box".I did some reserach and went a slightly different route. 
+I created a separate html page for the User Guide and linked it to our home page. When you click the link it redirects you to a page where you can read over and/or download 
+the user guide. I am really happy with the way it looks and the download button is already working!! Only thing I would like to change is instead of it redirecting the page 
+I want to see if I can get it to create a separate tab.
+
+2/27/21
+Asked Stacy to upload her website in a zipped file so I can tinker with the colors and add in a mobile nav code so the menu will not collapse when the screen is minimized. 
+I also want to add in the logo on her page.
+
+Asked Patrick for the updated logo - Jeff has it but I would like to update the pricing section to match the brochure. I also want to make sure our bullet points are similar.
+
+I added in an image in the product section for the example. Added in contents for the bullet points as a place holder until I receive the updated brochure.
+
+Added in the link to Stacy's page so when you click the log in button it takes you to her page.
+
+The website is wrapping up nicely. Only want to make a couple adjustments but all of it is on my "dream" list. Everything is functioning.
+
+Dream List - adjust the format of the "about" section. I also would like to figure out how to avoid the page redirecting to the manual. I would prefer a separate tab to open.
+
+3/7/21
+I met with Stacy and Colin to get assistance with opening the code to their webpage in visual studios. We were successful. I was able to open the code in visual studios.
+
+I left visual studios up and running so I would not lose the code. I started editing the code to change the color but when I click the button to run the code it says that I need an updated system for it to run on the browser? 
+
+SUPER frustrating.... I will address this with Stacy and Colin tomorrow.
+
+I did research and found a mobile nav code to try and fix the menu from collapsing when the browser is minimized.
+
+3/13/21
+I sent Stacy the link to the color code for the yellow that I used on the webpage. We are still meeting on Monday so I can check in and see if she needs assistance.
+I have been researching codes for the menu and I found a couple options. I sent one to Stacy but it doesnt match the format she currently has.
+I am going to talk to Stacy to see how open she is about changing the format of the menu if necessary.
+I am extremely frustrated with Visual Studios. I feel handicapped in helping Stacy and Colin with their webpage because I am not able to test the codes that I give them.
+I have unistalled and reinstalled Visual Studios and had Colin and Stacy walk through opening their codes and it is still not working.
+
+I took the time to download a template and emptied it to just the menu that is a similar format to Stacy's. I did this as a start from scratch to test codes to fix her menu.
+
+3/22/21
+Stacy let me know that the menu code I sent her fixed the menu!
+I plan on talking to her tonight about the color scheme.
+
+Goals for this week:
+Fix any formatting things on our website that don't look right to me - The about section.
+I need to get with Jeff to find out if our social media dummy accounts are working and link them if they are.
+Work with Stacy to get the colors for her webpage to match ours.
+
+3/28/21
+Met with Stacy for 30 mins on Wed. to mess with the colors on her webpage. We tried to change one thing but it didnt work and we got stuck. 
+Stacy sent me the some of her folders. I messed around and one code stuck out to me that makes me think its the reason the color didnt change. 
+I have a couple things in mind to test out with her tomorrow.
+
+Researched different hover codes to make the links on Stacy and Colins page stand out a little more.
+I found 1 that I want to try and see how it looks. I sent the code to Stacy on slack.
+
+Turned in my short bio and a pic. for Patrick to add to the user manual.
+
+Added in the social media links for twitter and instagram. I have to get rid of my linked in icon and replace it with tumbler.
+
+Corrected the formatting of the aboout section. I centered everything.
+
+Lamon only sent me the css page for his feather bullet points. I tinkered with it but couldnt get it to work. I plan on meeting with Amanda tomorrow during office hours.
+My brain stopped working so I had to call it quits.

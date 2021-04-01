@@ -1,0 +1,234 @@
+
+-- CODE FROM WORK IN PROGRESS ERD ON SQLDBM
+-- SYLLABUS TEAM Colin / Stacy
+
+-- ****************** SqlDBM: Microsoft SQL Server ******************
+-- ******************************************************************
+
+-- ************************************** [Institution]
+
+CREATE TABLE [Institution]
+(
+ [InstitutionId] int NOT NULL ,
+ [State]         varchar(50) NOT NULL ,
+ [Username]      varchar(50) NOT NULL ,
+ [Password]      varchar(50) NOT NULL ,
+
+
+ CONSTRAINT [PK_institution] PRIMARY KEY CLUSTERED ([InstitutionId] ASC)
+);
+GO
+
+
+
+
+
+
+
+
+-- ************************************** [Department]
+
+CREATE TABLE [Department]
+(
+ [DepartmentId]   int NOT NULL ,
+ [DepartmentCode] varchar(50) NOT NULL ,
+
+
+ CONSTRAINT [PK_department] PRIMARY KEY CLUSTERED ([DepartmentId] ASC)
+);
+GO
+
+
+
+
+
+
+
+
+-- ************************************** [Instructor]
+
+CREATE TABLE [Instructor]
+(
+ [InstucotorId]  int NOT NULL ,
+ [FirstName]     varchar(50) NOT NULL ,
+ [LastName]      varchar(50) NOT NULL ,
+ [PhoneNum]      int NOT NULL ,
+ [Email]         varchar(50) NOT NULL ,
+ [OfficeHour]    datetime NOT NULL ,
+ [InstitutionId] int NOT NULL ,
+ [Username]      varchar(50) NOT NULL ,
+ [Password]      varchar(50) NOT NULL ,
+
+
+ CONSTRAINT [PK_instructor] PRIMARY KEY CLUSTERED ([InstucotorId] ASC),
+ CONSTRAINT [FK_140] FOREIGN KEY ([InstitutionId])  REFERENCES [Institution]([InstitutionId])
+);
+GO
+
+
+CREATE NONCLUSTERED INDEX [fkIdx_141] ON [Instructor] 
+ (
+  [InstitutionId] ASC
+ )
+
+GO
+
+
+
+
+
+
+
+-- ************************************** [Course]
+
+CREATE TABLE [Course]
+(
+ [CourseID]     int NOT NULL ,
+ [Credit]       int NOT NULL ,
+ [Description]  varchar(max) NOT NULL ,
+ [Prerequisite] varchar(max) NOT NULL ,
+ [DepartmentId] int NOT NULL ,
+
+
+ CONSTRAINT [PK_course] PRIMARY KEY CLUSTERED ([CourseID] ASC),
+ CONSTRAINT [FK_133] FOREIGN KEY ([DepartmentId])  REFERENCES [Department]([DepartmentId])
+);
+GO
+
+
+CREATE NONCLUSTERED INDEX [fkIdx_134] ON [Course] 
+ (
+  [DepartmentId] ASC
+ )
+
+GO
+
+
+
+
+
+
+
+-- ************************************** [Administrator]
+
+CREATE TABLE [Administrator]
+(
+ [AdministatorId] int NOT NULL ,
+ [FirstName]      varchar(50) NOT NULL ,
+ [LastName]       varchar(50) NOT NULL ,
+ [PhoneNum]       int NOT NULL ,
+ [Email]          varchar(50) NOT NULL ,
+ [Password]       varchar(50) NOT NULL ,
+ [InstitutionId]  int NOT NULL ,
+ [Username]       varchar(50) NOT NULL ,
+
+
+ CONSTRAINT [PK_administrator] PRIMARY KEY CLUSTERED ([AdministatorId] ASC),
+ CONSTRAINT [FK_143] FOREIGN KEY ([InstitutionId])  REFERENCES [Institution]([InstitutionId])
+);
+GO
+
+
+CREATE NONCLUSTERED INDEX [fkIdx_144] ON [Administrator] 
+ (
+  [InstitutionId] ASC
+ )
+
+GO
+
+
+
+
+
+
+
+-- ************************************** [Segment]
+
+CREATE TABLE [Segment]
+(
+ [SegmentId]    int NOT NULL ,
+ [Title]        varchar(50) NOT NULL ,
+ [Description]  varchar(max) NOT NULL ,
+ [InstucotorId] int NOT NULL ,
+
+
+ CONSTRAINT [PK_segment] PRIMARY KEY CLUSTERED ([SegmentId] ASC),
+ CONSTRAINT [FK_123] FOREIGN KEY ([InstucotorId])  REFERENCES [Instructor]([InstucotorId])
+);
+GO
+
+
+CREATE NONCLUSTERED INDEX [fkIdx_124] ON [Segment] 
+ (
+  [InstucotorId] ASC
+ )
+
+GO
+
+
+
+
+
+
+
+-- ************************************** [Section]
+
+CREATE TABLE [Section]
+(
+ [SectionID] int NOT NULL ,
+ [Mode]      varchar(50) NOT NULL ,
+ [Room]      varchar(50) NOT NULL ,
+ [Time]      datetime NOT NULL ,
+ [StartDate] datetime NOT NULL ,
+ [EndDate]   datetime NOT NULL ,
+ [CourseID]  int NOT NULL ,
+
+
+ CONSTRAINT [PK_section] PRIMARY KEY CLUSTERED ([SectionID] ASC),
+ CONSTRAINT [FK_126] FOREIGN KEY ([CourseID])  REFERENCES [Course]([CourseID])
+);
+GO
+
+
+CREATE NONCLUSTERED INDEX [fkIdx_127] ON [Section] 
+ (
+  [CourseID] ASC
+ )
+
+GO
+
+
+
+
+
+
+
+-- ************************************** [Policy]
+
+CREATE TABLE [Policy]
+(
+ [PolicyId]       int NOT NULL ,
+ [Title]          varchar(50) NOT NULL ,
+ [Description]    varchar(max) NOT NULL ,
+ [AdministatorId] int NOT NULL ,
+
+
+ CONSTRAINT [PK_policy] PRIMARY KEY CLUSTERED ([PolicyId] ASC),
+ CONSTRAINT [FK_115] FOREIGN KEY ([AdministatorId])  REFERENCES [Administrator]([AdministatorId])
+);
+GO
+
+
+CREATE NONCLUSTERED INDEX [fkIdx_116] ON [Policy] 
+ (
+  [AdministatorId] ASC
+ )
+
+GO
+
+
+
+
+
+
+

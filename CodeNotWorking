@@ -1,0 +1,43 @@
+Added this to the Layout page 
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="nav navbar-nav navbar-left">
+            <li>@Html.ActionLink("Home", "Index", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li>@Html.ActionLink("About", "About", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right"> 
+            <div class="btn-right">
+                <button type="button" onclick="location.href='@Url.Action("_Admin", "Employees")'">Administrator</button>  THESE ARENT WORKING
+                <button type="button" onclick="location.href='@Url.Action("_Instructor", "Employees")'">Instructor</button>  THESE ARENT WORKING
+            </div>
+            <li> @Html.Partial("_LoginPartial")</li>
+        </ul>
+</div>
+
+Also created a class in the Employee Controlled to go along with the buttons, but they don't work for some reason, it's very frustrating.
+
+
+
+Tried this on the Account controller under the switch statement (case 1), almost had it working but I lost it somehow...
+
+   var user = await UserManager.FindAsync(model.Email, model.Password);
+                    
+                    if (user != null)
+                    {
+                        if (UserManager.IsInRole(user.Id, "Administrator"))
+                        {
+                            return RedirectToAction("_Admin", "Employees");
+                        }
+                        else if (UserManager.IsInRole(user.Id, "2"))
+                        {
+                            return RedirectToAction("_Teacher", "Employees");
+                        }
+                        else
+                        { return RedirectToAction("_Login", "Employees"); }
+
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Invalid");
+                    }
