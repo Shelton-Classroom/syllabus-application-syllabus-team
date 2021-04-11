@@ -1,3 +1,19 @@
+3/30-4/11/21
+Progress:
+  Fixed the form display so that it shows the Title and Description once selected
+  Met with Amanda and Sarah to fix HTML code so that our colors match the Company Website colors
+  Implemented the changes to the _Layout page to change the look of links and the navbar colors
+  Met with Bob and Colin to get a better idea of how to save the selections to the database
+  Changed the checkbox code to display under edit or create - Saves the changes through the FormCollection and updates the policies
+  
+Issues:
+  The Edit/Create page does not work when you hit Save, I've sent the error to Bob.
+  The research I did on the error code says that we are using the same property name twice. I'm going to look into that.
+  
+Goals:
+  Fix the error code, or figure out a way to work around it.
+  Produce a sample of the Syllabus!!!
+
 3/22-3/28/21
 Progress:
   Added employee credentials to login page for user testing
