@@ -1,3 +1,25 @@
+4/11/2021
+Progress:
+--Added new Syllabus controller to handle the generation of the syllabus
+--Added Section view that displays information about the section 
+I intend to change this to take a syllabus model.
+--Made a syllabus model in the model folder of the WebApplication.
+--Created 3 sets of arrays that will show a label for each line and the information
+for each line on the syllabus.
+
+Issues:
+--My Section view for the syllabus returns an error when I try to pass it a syllabus model.
+--In the syllabus model itself I can't seem to use variables made in the object file to fill the arrays.
+--Aparrently Sarah's copy of visual studio is not working which may be a problem because from what I can tell the 
+the syllabus for each course will be made mainly out of HTML
+
+Goals:
+--Get the syllabus model to pass to a cshtml file.
+--Fix the errors in my syllabus objects for the array information.
+--Pull data from policies to display on the syllabus.
+
+
+
 3/27/2021
 Progress:
   3/25/2021
