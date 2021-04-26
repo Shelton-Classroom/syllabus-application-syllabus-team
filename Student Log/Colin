@@ -1,3 +1,26 @@
+4/25/2021
+Progress:
+--Syllabus model now works
+--Syllabus passed now displays what's been made for the syllabus
+in HTML which was styled to look more professional.
+--Added a bridge table 'CoursePolicies' which allows the user to link policies
+to their courses.
+--Scafolding for the bridge table.
+--Changed coursepolicy table to use a checkbox when creating a policy 
+to determine if the policy is administrative or not.
+--Syllabus prototype completed
+--Added pictures for the Employee table.
+--The Instructor's picture now displays on the top left of the instructor's syllabi
+--Made syllabi per instructor available without logging in via the faculty page.
+
+Issues:
+Waiting on some stock photos to use for the employees from patrick.
+
+Goals:
+Work on organizing our presentation and come up with a plan on which pages to show, in which order.
+Also following our mock presentation maybe make small changes based on any feedback anyone has.
+
+
 4/11/2021
 Progress:
 --Added new Syllabus controller to handle the generation of the syllabus
