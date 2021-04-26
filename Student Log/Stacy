@@ -1,3 +1,23 @@
+4/25/21
+Progress:
+  Met with the team twice this week to form a plan for the final presentation.
+  Cleaned up courses, removed a curly brace that wasn't supposed to be there
+  Removed checkboxes from course - went a different route
+  Removed partial pages that were used in the beginning of our project,
+    but as things evolved, we changed our plans and went a different route so we no longer need them.
+  Added a link to get to the course policies page, moved the CONTACT US link to the bottom right of the footer
+  Added the course search box to the Manage Policies page
+  Erased the "create syllabus" link from the home page.
+  Erased the checked controller - not being used. 
+  Erased the "about" link from the header - it was redundant
+  
+Issues:
+  Getting an error for the search box
+  
+Goals:
+  Meet with Amanda tomorrow before class to get it fixed
+  Do a good job during the practice run tomorrow :)
+
 3/30-4/11/21
 Progress:
   Fixed the form display so that it shows the Title and Description once selected
